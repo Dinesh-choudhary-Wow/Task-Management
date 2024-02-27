@@ -10,4 +10,6 @@ public interface TaskDao extends JpaRepository<Task,Integer> {
 
 	boolean existsByTaskName(String taskName);
 
+	boolean existsByTaskNameAndIdNot(String taskName, int id);
+
 }
