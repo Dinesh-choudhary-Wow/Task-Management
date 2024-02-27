@@ -1,5 +1,8 @@
 package com.TaskManagement.dao;
 
-public class UserDao {
+import com.TaskManagement.entity.User;
 
+public interface UserDao extends JpaRepository<User, Integer> {
+
+	User findByName(String name);
 }
